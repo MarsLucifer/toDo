@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/signup.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="branding">Produly</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="login.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="signup.html" class="nav-link">Signup</a>
+            </li>
+        </ul>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="signup-form">
+            <div class="gif-area">
+                <img src="./assets/register-now-register-now-the-browser.gif" alt="gif">
+            </div>
+            <div class="form-area">
+                <form action="" id="regsiter">
+                    <div class="username">
+                        <div class="form-label" id="username-l">
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="form-input" id="username-input">
+                            <input type="text" id="username" placeholder="Enter an Username">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <div class="form-label" id="name-l">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-input" id="name-input">
+                            <input type="text" id="name" placeholder="Enter your Name">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="form-label" id="eamil-l">
+                            <label for="name">Email-Id</label>
+                        </div>
+                        <div class="form-input" id="email-input">
+                            <input type="email" id="email" placeholder="Enter your Email-Id">
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <div class="form-label" id="gender-l">
+                            <label for="gender">Gender</label>
+                        </div>
+                        <div class="form-input" id="gender-input">
+                            <select id="gender-in">
+                                <option value="" disabled selected>Select your gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dob">
+                        <div class="form-label" id="dob-l">
+                            <label for="username">Date-of-Birth</label>
+                        </div>
+                        <div class="form-input" id="dob-input">
+                            <input type="date" id="dob">
+                        </div>
+                    </div>
+                    <div class="pwd">
+                        <div class="form-label" id="pwd-l">
+                            <label for="username">Password</label>
+                        </div>
+                        <div class="form-input" id="pwd-input">
+                            <input type="password" id="pwd1" placeholder="Enter a Password">
+                        </div>
+                    </div>
+                    <div class="pwd">
+                        <div class="form-label" id="pwd-l">
+                            <label for="username">Re-enter password</label>
+                        </div>
+                        <div class="form-input" id="pwd-input">
+                            <input type="password" id="pwd2" placeholder="Re-enter Password">
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <button type="button" id="signup" onclick="register()">Signup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/registration.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-position: center;
+    background-color: black;
+}
+
+
+li {
+    list-style: none;
+}
+
+.branding {
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: "Wix Madefor Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fe9661;
+    transition: 0.7s ease;
+}
+
+.branding:hover {
+    color: #ff5500;
+}
+
+.nav-link {
+    color: #fe9661;
+    transition: 0.7s ease;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding-right: 10px;
+    font-family: "Wix Madefor Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ham-menu {
+    display: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #f65200;
+}
+
+.nav-menu ul {
+    justify-content: flex-end;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    height: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fc7d3e;
+}
+
+
+
+@media(max-width:768px) {
+    .ham-menu {
+        display: block;
+    }
+
+    .ham-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .ham-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .ham-menu.active {
+        z-index: 102;
+    }
+
+    .branding {
+        z-index: 102;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        transition: left 0.3s;
+        justify-content: center;
+        z-index: 101;
+        position: absolute;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: auto;
+    color: #f65200;
+    background-color: black;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.main-heading {
+    font-size: 100px;
+}
+
+.main-content h2,
+h3 {
+    font-size: 58px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(0, 0, 0, 0.75);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+    <title>Dasnboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="branding">Produly</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link logout">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+        </ul>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="weather">
+                <img src="assets/clear.png" class="weather-icon">
+                <h1 class="city">Ahmedabad</h1>
+                <h2 class="TEMP"></h2>
+                <div class="weather-info">
+                    <div class="col">
+                        <img src="assets/wind.png" alt="" class="win">
+                        <div>
+                            <p class="wind"></p>
+                            <p class="sub">Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/humidity.png" alt="" class="hum">
+                        <div>
+                            <p class="humidity"></p>
+                            <p class="sub">Humidity</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="time">
+
+            </div>
+            <div class="gif">
+
+            </div>
+        </div>
+        <div class="task-area">
+            <div class="task-field">
+                <h1 class="task-heading">Add tasks</h1>
+                <div class="task-form">
+                    <form id="task-form">
+                        <div class="task-name">
+                            <div class="form-label" id="name-label">
+                                <label class="task-name">Task Name</label>
+                            </div>
+                            <div class="form-inputs" id="name-input">
+                                <input type="text" id="name-inputs" placeholder="Enter Task Name">
+                            </div>
+                        </div>
+                        <div class="task-des">
+                            <div class="form-label" id="des-label">
+                                <label class="task-des">Task Description</label>
+                            </div>
+                            <div class="form-inputs" id="des-input">
+                                <input type="text" id="des-inputs" placeholder="Enter Task Description">
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <button id="submit-button" type="submit">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="task">
+                <ul id="taskList" class="task-list-items">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/dashboard.js"></script>
+</body>
+
+</html>

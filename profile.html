@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <title>Dasnboard</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="branding">Produly</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link logout">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+        </ul>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="profile-form">
+            <form class="profile">
+                <div class="username">
+                    <div class="form-label" id="username-label">
+                        <label id="userName-label">Username</label>
+                    </div>
+                    <div class="form-inputs" id="username-input">
+                        <input type="text" id="userName-input" readonly>
+                    </div>
+                </div>
+                <div class="name">
+                    <div class="form-label" id="name-label">
+                        <label id="Name-label">Name</label>
+                    </div>
+                    <div class="form-inputs" id="name-input">
+                        <input type="text" id="Name-input">
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="form-label" id="email-label">
+                        <label id="Email-label">Email</label>
+                    </div>
+                    <div class="form-inputs" id="email-input">
+                        <input type="email" id="Email-input">
+                    </div>
+                </div>
+                <div class="gender">
+                    <div class="form-label" id="gender-label">
+                        <label id="userName-label">Gender</label>
+                    </div>
+                    <div class="form-inputs" id="gender-input">
+                        <select name="" id="Gender-input">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dob">
+                    <div class="form-label" id="date-label">
+                        <label id="userName-label">Date of Birth</label>
+                    </div>
+                    <div class="form-inputs" id="date-input">
+                        <input type="date" id="dob-input">
+                    </div>
+                </div>
+                <div class="submit-button">
+                    <button class="submit" type="submit">Update Profile</button>
+                </div>
+            </form>
+            <div class="forgot">
+                <a href="reset.html" class="forgot-pwd">Forgot your Password?</a>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/profile.js"></script>
+</body>
+
+</html>

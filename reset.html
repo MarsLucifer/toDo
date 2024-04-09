@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <title>Reset Password</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="branding">Produly</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+        </ul>
+        <div class="ham-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="reset-pwd">
+            <form id="reset-passwd">
+                <div class="new-passwd">
+                    <div class="form-labels" id="new-pwd">
+                        <label id="new-passwd">Enter new Password</label>
+                    </div>
+                    <div class="form-inputs" id="newPwd-input">
+                        <input type="password" id="newPWD" placeholder="Please enter the new Password">
+                    </div>
+                </div>
+                <div class="new-passwd">
+                    <div class="form-labels" id="new-pwd">
+                        <label id="new-passwd">Enter new Password</label>
+                    </div>
+                    <div class="form-inputs" id="newPwd-input">
+                        <input type="password" id="newPWDC" placeholder="Please confirm new Password">
+                    </div>
+                </div>
+                <div class="change-button">
+                    <button type="submit">Reset Password</button>
+                </div>
+            </form>
+        </div>
+        <script src="/scripts/index.js"></script>
+        <script src="scripts/reset.js"></script>
+</body>
+
+</html>

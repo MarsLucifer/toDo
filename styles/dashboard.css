@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-position: center;
+    background-color: black;
+}
+
+
+li {
+    list-style: none;
+}
+
+.branding {
+    text-decoration: none;
+    padding-left: 10px;
+    font-family: "Wix Madefor Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fe9661;
+    transition: 0.7s ease;
+}
+
+.branding:hover {
+    color: #ff5500;
+}
+
+.nav-link {
+    color: #fe9661;
+    transition: 0.7s ease;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    padding-right: 10px;
+    font-family: "Wix Madefor Display", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.ham-menu {
+    display: none;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #f65200;
+}
+
+.nav-menu ul {
+    justify-content: flex-end;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    height: 4px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fc7d3e;
+}
+
+
+
+@media(max-width:768px) {
+    .ham-menu {
+        display: block;
+    }
+
+    .ham-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .ham-menu.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .ham-menu.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .ham-menu.active {
+        z-index: 102;
+    }
+
+    .branding {
+        z-index: 102;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        transition: left 0.3s;
+        justify-content: center;
+        z-index: 101;
+        position: absolute;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 100px;
+    width: auto;
+    font-family: "Wix Madefor Display", serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #82c0cc;
+    width: 400px;
+    height: 670px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 200px;
+}
+
+.weather {
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather-icon {
+    width: 100px;
+    align-items: center;
+    margin: 10px auto auto 140px;
+}
+
+.city {
+    font-size: 32px;
+    font-weight: 600;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.TEMP {
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.hum,
+.win {
+    width: 60px;
+    padding-right: 14px;
+}
+
+.time {
+    color: aliceblue;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.gif img {
+    width: 330px;
+    height: 250px;
+    padding-top: 10px;
+    margin: 10px auto auto 35px;
+}
+
+.task-field {
+    font-family: "Wix Madefor Display", serif;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 900px;
+    margin-top: -500px;
+    color: #82c0cc;
+    height: auto;
+    position: relative;
+}
+
+.task-form {
+    display: flex;
+    margin-top: 20px;
+    width: 330px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Wix Madefor Display", serif;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.task-heading {
+    font-family: "Wix Madefor Display", serif;
+    font-weight: 500;
+}
+
+.form-label {
+    padding-bottom: 7px;
+}
+
+.task-name {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.task-des {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.form-inputs input {
+    text-align: center;
+    width: 300px;
+    height: 27px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 12px;
+}
+
+.submit {
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+#submit-button {
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #fe9661;
+    font-weight: 600;
+    transition: 0.4s ease-in;
+}
+
+#submit-button:hover {
+    background-color: #ff5500;
+    color: white;
+    scale: 1.05;
+}
+
+.task-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+    margin-left: -400px;
+}
+
+.task {
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 870px;
+}
+
+.task-list-items {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.task-list-items li {
+    list-style: none;
+    display: block;
+    max-width: 222px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.task a {
+    color: #f65200;
+    text-decoration: none;
+}
